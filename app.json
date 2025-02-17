@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "jsEngine": "hermes"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "jsEngine": "hermes"
     },
     "web": {
       "bundler": "metro",
@@ -24,6 +26,7 @@
     },
     "plugins": [
       "expo-router",
+      "expo-sqlite",
       [
         "expo-splash-screen",
         {
